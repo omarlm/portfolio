@@ -1,4 +1,5 @@
 body {
+    margin: 0;
     font-family: 'PT Sans', sans-serif;
 }
 
@@ -7,14 +8,14 @@ section {
 }
 
 .hero {
-    background-color: #1c1c25;
     height: 100vh;
     color: #FFF;
     font-size: 40px;
+    background: linear-gradient(168deg, #FFF 35%, #24a19c 35%);
 }
 
 footer {
-    background-color: #000;
+    background-color: #393e46;
     color: #FFF;
     text-align: center;
     padding: 80px;
@@ -40,6 +41,7 @@ li {
     width: 200px;
     font-size: 30px;
     text-decoration: none;
+    color: #000;
 }
 
 h1 {
@@ -114,7 +116,7 @@ p {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 80px;
+    padding: 50px;
 }
 
 .headshot {
@@ -127,16 +129,13 @@ p {
     align-items: center;
 }
 
-.project-card {
-    width: 300px;
-    height: 500px;
-    box-shadow: 5px 5px 20px #CCC;
-    margin: 10px;
+.project-container ul {
+    width: 100%;
 }
 
-.project-container {
-    display: flex;
-    justify-content: space-around;
+.project-container li{
+    justify-content: flex-end;
+    width: 90%;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -155,7 +154,6 @@ p {
 hr {
     margin-left: 20px;
     margin-right: 20px;
-
 }
 
 .project-link {
@@ -165,7 +163,7 @@ hr {
 
 a {
     text-decoration: none;
-    color: #FFF;
+    color: #000;
 }
 
 .hamburger {
@@ -177,11 +175,16 @@ a {
 }
 
 @media only screen and (max-width: 1000px) {
+
+    .project-container {
+        display: flex;
+    }
+
     .hamburger {
         display: block;
         border: 0;
         background-color: transparent;
-        color: #FFF;
+        color: #000;
         font-size: 30px;
         margin: 20px;
         align-self: flex-end;
@@ -189,12 +192,22 @@ a {
 
     ul {
         display: none;
-        background-color: #2b2c38;
+        background-color: #FFF;
         margin: 0;
     }
 
     ul.show {
         display: block;
+    }
+
+    li {
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    li:hover {
+        background-color: #CCC;
     }
 
     nav {
