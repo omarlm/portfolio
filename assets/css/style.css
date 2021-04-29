@@ -11,12 +11,12 @@ section {
     height: 100vh;
     color: #FFF;
     font-size: 40px;
-    background: linear-gradient(168deg, #FFF 35%, #24a19c 35%);
+    background: linear-gradient(168deg, #FFF 42%, #24a19c 42%);
 }
 
 footer {
-    background-color: #393e46;
-    color: #FFF;
+    background-color: #eeeeee;
+    color: #000;
     text-align: center;
     padding: 80px;
 }
@@ -24,6 +24,7 @@ footer {
 nav {
     display: flex;
     justify-content: space-between;
+    background-color: #393e46;
 }
 
 ul {
@@ -75,26 +76,6 @@ p {
     margin-left: 80px;
 }
 
-.button {
-    width: 200px;
-    height: 50px;
-    border-radius: 30px;
-    background-color: coral;
-    text-align: center;
-    font-size: 30px;
-    font-weight: 400;
-    padding-top: 5px;
-}
-
-.button:hover {
-    background-color: #ef744b;
-}
-
-.button:active {
-    background-color: #A9A9A9;
-    color: #808080;
-}
-
 .socials {
     padding-bottom: 200px;
 }
@@ -117,6 +98,7 @@ p {
     flex-direction: column;
     text-align: center;
     padding: 50px;
+    background-color: #00adb5;
 }
 
 .headshot {
@@ -135,14 +117,7 @@ p {
 
 .project-container li{
     justify-content: flex-end;
-    width: 90%;
-}
-
-@media only screen and (max-width: 1000px) {
-    .project-container {
-        display: flex;
-        flex-wrap: wrap;
-    }
+    width: 100%;
 }
 
 .project-image {
@@ -163,7 +138,7 @@ hr {
 
 a {
     text-decoration: none;
-    color: #000;
+    color: #FFF;
 }
 
 .hamburger {
@@ -176,23 +151,45 @@ a {
 
 @media only screen and (max-width: 1000px) {
 
-    .project-container {
-        display: flex;
+    h1, h2{
+        font-size: 70px;
     }
 
     .hamburger {
         display: block;
         border: 0;
         background-color: transparent;
-        color: #000;
+        color: #FFF;
         font-size: 30px;
         margin: 20px;
         align-self: flex-end;
     }
 
+    .hero {
+        background: linear-gradient(168deg, #FFF 35%, #24a19c 35%);
+    }
+
+    .sub-section-alternative {
+        justify-content: end;
+        text-align: left;
+        padding: 15px;
+    }
+
+    .project-container ul {
+        display: block;
+        padding: 0;
+    }
+
+    .project-items li {
+        font-size: 14px;
+    }
+
+    .project-items .social {
+        padding-top: 5px;
+    }
+
     ul {
         display: none;
-        background-color: #FFF;
         margin: 0;
     }
 
@@ -206,13 +203,14 @@ a {
         justify-content: space-between;
     }
 
-    li:hover {
-        background-color: #CCC;
+    a {
+        color: #FFF;
     }
 
     nav {
         display: flex;
         flex-direction: column-reverse;
+        background-color: #393e46;
     }
 
     .logo {
